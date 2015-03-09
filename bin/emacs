@@ -5,4 +5,4 @@
 # like mouse-selection, click-to-focus, nice fonts etc. This script gives
 # us the best of both worlds
 
-/Applications/Emacs.app/Contents/MacOS/Emacs "$@"
+/Applications/Emacs.app/Contents/MacOS/Emacs "$@" &
