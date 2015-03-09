@@ -18,7 +18,6 @@
 ;; (require 'better-defaults)
 ;; (require 'exec-path)
 (require 'web-shortcuts)
-;; (require 'modeline)
 (require 'git)
 ;; (require 'ruby)
 ;; (require 'clojure)
