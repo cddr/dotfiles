@@ -1,0 +1,128 @@
+lein test
+lein test
+lein test
+lein test
+lein test
+lein test
+lein test
+lein test
+lein test
+lein test
+lein test
+lein test
+lein test
+lein test
+lein test
+lein test
+lein test
+lein test
+lein test
+lein test
+lein test
+lein deps
+lein deps
+cd ..
+cd ..
+cd ..
+lein test
+lein test
+lein test
+lein test
+lein test
+lein test
+cd ~/Downloads/datomic-pro-0.9.4470/
+ls
+mvn install:install-file -DgroupId=com.datomic -DartifactId=datomic-free -Dfile=datomic-pro-0.9.4470.jar -DpomFile=pom.xml
+[WARNING] Failed to retrieve plugin descriptor for org.apache.maven.plugins:maven-assembly-plugin:2.2: Plugin org.apache.maven.plugins:maven-assembly-plugin:2.2 or one of its dependencies could not be resolved: Failed to read artifact descriptor for org.apache.maven.plugins:maven-assembly-plugin:jar:2.2
+echo JAVA_HOME
+echo $JAVA_HOME
+cd ..
+cd ../dev/
+mkdir pedestal-app-tutorial
+cd pedestal-app-tutorial/
+lein new pedestal-app tutorial-client
+cd tutorial-client/
+lein repl
+cd ../../../
+cd dev/groupthink/
+lein test
+lein deps
+lein deps
+lein deps
+lein datomic start &
+lein datomic start &
+ps
+jobs
+lein deps
+lein test
+lein test
+lein test
+lein test
+lein test
+lein test
+lein test
+lein test
+lein test
+lein test
+lein test
+lein test
+lein test
+lein test
+lein test
+lein test
+lein test
+lein test
+lein test
+lein test
+lein test
+lein test
+lein test
+lein test
+lein test
+lein test
+lein test
+lein test
+lein test
+lein test
+lein test
+lein test
+lein test
+lein test
+lein test
+lein test
+cd ../../.emacs.d/
+ls
+mkdir vendor
+cd vendor/
+git clone https://github.com/clojure-emacs/cider.git
+cd .emacs.d/vendor/
+ls
+cd cider/
+ls
+make
+curl -fsSkL https://raw.github.com/cask/cask/master/go | python
+cd ../../
+rails c
+cd ../../../
+lein new matching-engine
+cd ../../../
+find-file { bundle open inherited_resources }
+find-file { bundle show inherited_resources }
+nodeready
+cd ../../
+bundle show active-model-serializers
+bundle show active_model_serializers
+find-file { bundle show active_model_serializers }
+cd ../
+lein new web-entities
+rm -rf web-entities/
+lein new resourceful
+cd cm-api/
+lein help
+lein show-profiles
+find-file { bundle show file_upload_cache }
+find-file { bundle show file_upload_cache }
+cd ../../../
+find-file { bundle show shoulda-matchers }
+find-file { bundle show shoulda-matchers }
+lein new defapi
