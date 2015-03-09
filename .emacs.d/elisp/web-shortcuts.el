@@ -10,6 +10,5 @@
          (buffer-substring (region-beginning) (region-end))
          (read-string "Google: "))))))
 
-(global-set-key (kbd "C-c g") 'google)
-
 (provide 'web-shortcuts)
+
