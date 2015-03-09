@@ -19,7 +19,7 @@
 ;; (require 'exec-path)
 (require 'web-shortcuts)
 (require 'git)
-;; (require 'ruby)
+(require 'ruby)
 ;; (require 'clojure)
 
 (progn
