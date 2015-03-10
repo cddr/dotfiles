@@ -21,6 +21,8 @@ brew install git
 brew install emacs --HEAD --cocoa
 
 brew install caskroom/cask/brew-cask
+brew cask install dropbox
+brew cask install 1password
 brew cask install google-chrome
 brew cask install virtualbox
 brew cask install vagrant
