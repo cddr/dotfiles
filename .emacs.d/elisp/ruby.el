@@ -1,12 +1,10 @@
 (require 'whitespace)
+(require 'grep)
 
 ;;;###autoload
 (dolist (pattern '("Capfile\\'" "Gemfile\\'" "Rakefile\\'" "Vagrantfile\\'"
                      "\\.rake\\'" "\\.rb\\'" "\\.ru\\'"))
   (add-to-list 'auto-mode-alist (cons pattern 'ruby-mode)))
-
-;;;###autoload
-(add-to-list 'grep-files-aliases '("rb" . "*.rb"))
 
 (defun webteam-standards ()
   (whitespace-mode)

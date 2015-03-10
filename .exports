@@ -1,5 +1,8 @@
-# Make vim the default editor.
-export EDITOR='vim';
+# Make emacsclient start emacs if necessary, otherwise just
+# launch the edit script
+export ALTERNATE_EDITOR=emacs
+export EDITOR=edit
+export VISUAL=edit
 
 # Increase Bash history size. Allow 32³ entries; the default is 500.
 export HISTSIZE='32768';
