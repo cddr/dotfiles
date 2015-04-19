@@ -15,6 +15,8 @@ brew update
 brew upgrade
 
 # GNU core utilities for the benefit of dired
+brew install gcc
+brew install cmake
 brew install coreutils
 brew install git
 
@@ -29,3 +31,5 @@ brew cask install vagrant
 
 brew linkapps
 brew cleanup
+
+./private-toolbox.sh

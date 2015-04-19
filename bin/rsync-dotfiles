@@ -1,11 +1,15 @@
 #!/usr/bin/env bash
 
-cd ${HOME}/.dotfiles
+cd ${HOME}/Projects/dotfiles
 
   rsync --exclude ".git/" \
         --exclude ".DS_Store" \
         --exclude "bootstrap.sh" \
         --exclude "README.md" \
+        --exclude ".emacs.d/eshell/history" \
+        --exclude ".emacs.d/eshell/lastdir" \
+        --exclude "\#*\#" \
+        --exclude ".#*" \
         --exclude "LICENSE-MIT.txt" -avh --no-perms . ~;
 
 cd -
