@@ -53,3 +53,5 @@ bindkey "^[[1;3D" backward-word
 
 # Machine-specific overrides (not tracked — e.g. EDITOR path, per-machine flags)
 [[ -f "$HOME/.zshrc.secrets" ]] && source "$HOME/.zshrc.secrets"
+
+alias claude='claude --model haiku'
