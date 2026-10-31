@@ -4,7 +4,8 @@ set -euo pipefail
 # Usage: ./install.sh [--links-only]   (skip brew/oh-my-zsh bootstrap)
 LINKS_ONLY=0; [[ "${1:-}" == "--links-only" ]] && LINKS_ONLY=1
 
-DOTFILES="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+REPO_HOME="${REPO_HOME:-$HOME/Repos}"
+DOTFILES="$REPO_HOME/dotfiles"
 
 bootstrap() {
   # Packages: formulae and casks (mise, atuin, gcloud, emacs, ...)

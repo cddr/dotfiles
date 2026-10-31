@@ -1,3 +1,6 @@
+# Root of the git checkouts (dotfiles, dotfiles-hudl, vre, ...)
+export REPO_HOME="$HOME/Repos"
+
 # user-installed binaries (claude, etc.)
 export PATH="$HOME/.local/bin:$PATH"
 
