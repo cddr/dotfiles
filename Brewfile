@@ -56,6 +56,8 @@ brew "gstreamer"
 brew "gum"
 # JSON diff and patch
 brew "jd"
+# Lightweight and flexible command-line JSON processor
+brew "jq"
 # Generic command-line non-JVM Apache Kafka producer and consumer
 brew "kcat"
 # Kubernetes command-line interface

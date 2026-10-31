@@ -58,6 +58,17 @@ macos_defaults() {
   defaults write NSGlobalDomain InitialKeyRepeat -int 15
 }
 
+# Claude Code owns ~/.claude/settings.json (it writes model, theme, ...), so it can't
+# be symlinked. Merge in only the status line, leaving everything else alone.
+claude_settings() {
+  local f="$HOME/.claude/settings.json" tmp
+  mkdir -p "$HOME/.claude"
+  [[ -s "$f" ]] || echo '{}' > "$f"
+  tmp="$(mktemp)"
+  jq '.statusLine = {type: "command", command: "~/.claude/statusline.sh"}' "$f" > "$tmp" && mv "$tmp" "$f"
+  echo "settings:  $f (statusLine)"
+}
+
 (( LINKS_ONLY )) || bootstrap
 
 link .zshrc
@@ -75,6 +86,8 @@ link .config/git/ignore
 link .config/git/personal
 link .config/gh/config.yml
 link .config/btop/btop.conf
+link .claude/statusline.sh
+claude_settings
 
 install_launch_agents
 macos_defaults
