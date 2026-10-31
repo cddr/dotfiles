@@ -4,8 +4,8 @@ Shell, Emacs, git, Homebrew and macOS setup for my Macs. Public on purpose, so a
 fresh laptop can clone it with no credentials; nothing private lives here.
 
 ```sh
-git clone https://github.com/cddr/dotfiles ~/my-repos/dotfiles
-cd ~/my-repos/dotfiles && ./install.sh     # ./install.sh --links-only to just relink
+git clone https://github.com/cddr/dotfiles ~/Repos/dotfiles
+cd ~/Repos/dotfiles && ./install.sh     # ./install.sh --links-only to just relink
 ```
 
 `install.sh` is idempotent. It runs `brew bundle`, clones oh-my-zsh, symlinks the

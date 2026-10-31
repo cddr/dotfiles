@@ -18,5 +18,5 @@
 	path = ~/.config/work/gitconfig
 	path = ~/.gitconfig.local
 # This public repo commits as the personal address, not the work one
-[includeIf "gitdir:~/my-repos/dotfiles/"]
+[includeIf "gitdir:~/Repos/dotfiles/"]
 	path = ~/.config/git/personal
