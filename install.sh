@@ -87,6 +87,7 @@ link .config/git/personal
 link .config/gh/config.yml
 link .config/btop/btop.conf
 link .claude/statusline.sh
+link .oh-my-zsh/custom/secrets.zsh
 claude_settings
 
 install_launch_agents
