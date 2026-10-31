@@ -47,6 +47,13 @@ bindkey -e
 bindkey "^[[1;3C" forward-word
 bindkey "^[[1;3D" backward-word
 
+# Personal secrets, resolved via pass (personal/ subtree, encrypted to the personal key).
+# gpg-agent caches the passphrase after first unlock. Skipped where pass is absent.
+if command -v pass >/dev/null; then
+  export GEMINI_API_KEY=$(pass show personal/gemini/api-key 2>/dev/null)
+  export GOOGLE_TTS_API_KEY=$(pass show personal/google/tts-key 2>/dev/null)
+fi
+
 # Private overlay: work config and secrets (separate private repo, optional)
 [[ -f "$HOME/.config/work/zshrc" ]] && source "$HOME/.config/work/zshrc"
 

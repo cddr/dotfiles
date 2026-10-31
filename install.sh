@@ -67,6 +67,7 @@ link .gitconfig
 # Link each skill individually: ~/.claude/skills also holds app-managed content
 # (synced/), which must not end up inside this repo.
 for skill in "$DOTFILES"/.claude/skills/*/; do
+  [[ -d "$skill" ]] || continue   # no skills in this repo: the glob stays literal
   link ".claude/skills/$(basename "$skill")"
 done
 link .config/mise/config.toml
