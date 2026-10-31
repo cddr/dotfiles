@@ -1,0 +1,9 @@
+# Keep all default rules; only allow GPG key fingerprints in git config
+# (a fingerprint is a public identifier, not a secret).
+[extend]
+useDefault = true
+
+[[allowlists]]
+description = "GPG key fingerprint in git config"
+regexTarget = "line"
+regexes = ['''signingkey\s*=\s*[0-9A-Fa-f]{16,40}''']

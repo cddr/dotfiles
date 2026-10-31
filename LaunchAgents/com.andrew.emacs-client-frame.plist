@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key><string>com.andrew.emacs-client-frame</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/sh</string>
+    <string>-c</string>
+    <string>until /opt/homebrew/bin/emacsclient -e t &gt;/dev/null 2&gt;&amp;1; do sleep 1; done; exec /opt/homebrew/bin/emacsclient -c -n</string>
+  </array>
+  <key>RunAtLoad</key><true/>
+  <key>StandardOutPath</key><string>/tmp/emacs-client-frame.log</string>
+  <key>StandardErrorPath</key><string>/tmp/emacs-client-frame.log</string>
+</dict>
+</plist>

@@ -1,0 +1,6 @@
+# Identity and signing for the public dotfiles repo (see the includeIf in ~/.gitconfig)
+[user]
+	email = achambers.home@gmail.com
+	signingkey = 32EF64D43045B996F2E0F48E996BC88702CF11E4
+[commit]
+	gpgsign = true

@@ -1,0 +1,5 @@
+.zshrc.secrets
+.zshrc.local
+.gitconfig.local
+*.bak
+.DS_Store

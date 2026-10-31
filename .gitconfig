@@ -1,0 +1,22 @@
+[core]
+	excludesFile = ~/.gitignore
+	autocrlf = input
+[user]
+	name = Andy Chambers
+[push]
+	default = current
+[alias]
+	branches-by-date = branch --sort=-committerdate
+[pull]
+	rebase = true
+[init]
+	defaultBranch = main
+[credential "https://github.com"]
+	helper = !gh auth git-credential
+# Identity and signing live outside this repo (git ignores a missing include)
+[include]
+	path = ~/.config/work/gitconfig
+	path = ~/.gitconfig.local
+# This public repo commits as the personal address, not the work one
+[includeIf "gitdir:~/my-repos/dotfiles/"]
+	path = ~/.config/git/personal

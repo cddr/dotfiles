@@ -1,0 +1,8 @@
+# Whitelist: ignore everything, then re-include the config only.
+*
+!.gitignore
+!*.el
+!elisp/
+#*#
+.#*
+custom.el

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key><string>com.andrew.keyboard-config</string>
+  <!-- Remap Caps Lock (0x700000039) to Left Command (0x7000000E3) at login.
+       hidutil mappings are lost on reboot, hence the agent. -->
+  <key>ProgramArguments</key>
+  <array>
+    <string>/usr/bin/hidutil</string>
+    <string>property</string>
+    <string>--set</string>
+    <string>{"UserKeyMapping":[{"HIDKeyboardModifierMappingSrc":30064771129,"HIDKeyboardModifierMappingDst":30064771299}]}</string>
+  </array>
+  <key>RunAtLoad</key><true/>
+  <key>StandardOutPath</key><string>/tmp/keyboard-config.log</string>
+  <key>StandardErrorPath</key><string>/tmp/keyboard-config.log</string>
+</dict>
+</plist>

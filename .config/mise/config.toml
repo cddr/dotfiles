@@ -1,0 +1,11 @@
+[tools]
+babashka = "latest"
+clojure = "1.12"
+java = "21"
+leiningen = "latest"
+maven = "latest"
+node = "lts"
+"npm:nbb" = "latest"
+
+[settings]
+experimental = true

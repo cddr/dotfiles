@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Scan the commits being pushed (this repo is public).
+command -v gitleaks >/dev/null || exit 0
+exec gitleaks git --redact --no-banner --verbose
